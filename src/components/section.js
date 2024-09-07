@@ -49,7 +49,7 @@ export default function Section() {
 
   return (
     <>
-      <div className='flex flex-col basis-[60%] '>
+      <div className='flex flex-col basis-[60%] w-[100%] small-about-container'>
         <div>
           <h1 id='about' className='text-5xl small-about-h1'>
             About Me

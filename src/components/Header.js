@@ -41,12 +41,12 @@ export default function Header() {
 
   return (
     <>
-      <div>
-        <div className='flex align-center justify-between flex-wrap my-4'>
+      <div className='w-[100%]'>
+        <div className='flex align-center justify-between flex-wrap my-4 w-[100%] nav-container'>
           <h1 className='text-5xl'>
             <span className='text-red-600'>G</span>angadhar
           </h1>
-          <div className='flex z-50 relative'>
+          <div className='flex z-50 relative small-ul-container'>
             <ul className='flex flex-row space-x-4 small-ul'>
               <IoClose className='cross' onClick={crossClicked} />
               {navLinks.map((link) => (
@@ -90,7 +90,7 @@ export default function Header() {
           </div>
         </div>
 
-        <div className='flex justify-between small-introduce'>
+        <div className='flex justify-between items-start basis-[35%]  small-introduce'>
           <div className='flex flex-wrap flex-col bg-transparent mt-[20%] introduce'>
             <p className='text-3xl'>Web Developer</p>
             <h1 className='text-5xl mt-4'>
@@ -98,13 +98,13 @@ export default function Header() {
               <br /> from Andhra Pradesh
             </h1>
           </div>
-          <div className='flex bg-transparent'>
+          <div className='flex justify-end basis-[60%] bg-transparent my-img-container'>
             <Image
               src={Mypic}
               alt='mypic'
               width={600}
               height={100}
-              className='ml-[10px] rounded-lg my-img'
+              className='ml-[10px] rounded-lg my-img w-[100%] '
               priority
             />
           </div>

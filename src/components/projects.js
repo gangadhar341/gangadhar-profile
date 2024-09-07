@@ -9,18 +9,18 @@ import Link from "next/link";
 export default function Projects() {
   return (
     <>
-      <div className='text-white flex flex-col flex-wrap py-[80px] ml-[60px] small-projects'>
+      <div className='text-white flex flex-col flex-wrap py-[5%] w-[100%] small-projects'>
         <h1 id='projects' className='text-5xl'>
           Projects
         </h1>
-        <div className='flex flex-wrap justify-around items-center mt-[30px] small-projects-container'>
-          <div className='relative rounded-lg overflow-hidden group block small-project-div'>
+        <div className='flex flex-wrap justify-around items-center w-[100%] mt-[30px] small-projects-container'>
+          <div className='relative flex basis-[30%] rounded-lg overflow-hidden group  small-project-div'>
             <Image
               src={Driver}
               alt='Driver'
               width={300}
-              height={80}
-              className='w-[300px] h-[300px] object-cover rounded-lg transition-transform duration-500 ease-in-out group-hover:scale-110 small-project-img '
+              height={300}
+              className='w-[100%] h-[100%] object-cover rounded-lg transition-transform duration-500 ease-in-out group-hover:scale-110 small-project-img '
               priority
             />
             <div className='absolute inset-0 flex items-center justify-center flex-col w-full h-full  bg-gradient text-white text-center overflow-hidden transition-all duration-500 ease-in-out opacity-0 hover:opacity-100 small-project-p'>
@@ -39,13 +39,13 @@ export default function Projects() {
               </Link>
             </div>
           </div>
-          <div className='ml-[10px] relative overflow-hidden group rounded-lg small-project-div'>
+          <div className='flex basis-[30%] relative overflow-hidden group rounded-lg small-project-div'>
             <Image
               src={Profile}
               alt='Profile'
               width={300}
               height={120}
-              className=' w-[300px] h-[300px]  rounded-lg transition-transform duration-500 ease-in-out group-hover:scale-110 small-project-img'
+              className=' w-[100%] h-[400px]  rounded-lg transition-transform duration-500 ease-in-out group-hover:scale-110 small-project-img'
               priority
             />
             <div className='absolute inset-0 flex items-center justify-center flex-col w-full h-full  bg-gradient text-white text-center overflow-hidden transition-all duration-500 ease-in-out opacity-0 hover:opacity-100 small-project-p'>
@@ -64,13 +64,13 @@ export default function Projects() {
               </Link>
             </div>
           </div>
-          <div className='ml-[10px] relative overflow-hidden group rounded-lg small-project-div'>
+          <div className='flex basis-[30%] relative overflow-hidden group rounded-lg small-project-div'>
             <Image
               src={ChatPic}
               alt='ChatPic'
               width={400}
               height={400}
-              className=' w-[300p] h-[300px] object-fill rounded-lg transition-transform duration-500 ease-in-out group-hover:scale-110 small-project-img'
+              className=' w-[100%] h-[400px] object-fill rounded-lg transition-transform duration-500 ease-in-out group-hover:scale-110 small-project-img'
               priority
             />
             <div className='absolute inset-0 flex items-center justify-center flex-col w-full h-full  bg-gradient text-white text-center overflow-hidden transition-all duration-500 ease-in-out opacity-0 hover:opacity-100 small-project-p'>

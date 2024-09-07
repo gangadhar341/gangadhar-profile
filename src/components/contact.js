@@ -34,18 +34,18 @@ export default function Contact() {
   };
   return (
     <>
-      <div className='text-white flex flex-col flex-wrap py-[80px] ml-[60px] small-contact-container'>
-        <div className='flex'>
-          <div className='flex small-contact'>
-            <div className='flex flex-col gap-6 basis-[35%] small-contact-row1'>
-              <h1 id='contact' className='text-5xl w-[16rem] mb-4 '>
-                Contact Me
-              </h1>
-              <p className='flex items-center text-2xl first-p'>
+      <div className='text-white flex flex-col flex-wrap py-[5%] px-[5%] small-contact-container'>
+        <div className='flex w-[100%]  small-contact'>
+          <div className='flex flex-col gap-6 basis-[35%] small-contact-row1'>
+            <h1 id='contact' className='text-5xl w-[16rem] mb-4 '>
+              Contact Me
+            </h1>
+            <div className='ml-[20px] flex flex-col justify-between'>
+              <p className='flex items-center text-2xl mb-4 first-p'>
                 <GoMail className='text-red-600 go-mail' /> &nbsp;
                 <span className='inline-block'>gangadharampolu@gmail.com</span>
               </p>
-              <p className='flex items-center text-2xl'>
+              <p className='flex items-center text-2xl mb-4'>
                 <FaPhone className='text-red-600' /> &nbsp; +91 9390707023
               </p>
               <div className='flex gap-6'>
@@ -74,55 +74,56 @@ export default function Contact() {
                   <SiLeetcode className='text-white-600 text-2xl' />
                 </Link>
               </div>
-              {/* <a
+            </div>
+            {/* <a
                 href='/public/Gangadhar.pdf'
                 download
                 className='border-r-2 border-red-600'
               >
                 Download CV
               </a> */}
-            </div>
-            <div className='flex basis-[60%] small-contact-row2'>
-              <form
-                className='bg-transparent w-[100%] '
-                name='submit-to-google-sheet'
-                ref={formRef}
-                onSubmit={handleSubmit}
-              >
-                <input
-                  type='text'
-                  name='Name'
-                  placeholder='Your Name'
-                  className='bg-transparent input '
-                  required
-                />
-                <input
-                  type='email'
-                  name='Email'
-                  placeholder='Your Email'
-                  className='bg-transparent input '
-                  required
-                />
-                <textarea
-                  name='Message'
-                  rows='6'
-                  placeholder='Your Message'
-                  className='bg-transparent input '
-                ></textarea>
-                <button type='submit' className='btn'>
-                  Submit
-                </button>
-              </form>
-            </div>
+          </div>
+          <div className='flex ml-4 basis-[60%] w-[100%] justify-end small-contact-row2'>
+            <form
+              className='bg-transparent w-[100%] '
+              name='submit-to-google-sheet'
+              ref={formRef}
+              onSubmit={handleSubmit}
+            >
+              <input
+                type='text'
+                name='Name'
+                placeholder='Your Name'
+                className='bg-transparent input '
+                required
+              />
+              <input
+                type='email'
+                name='Email'
+                placeholder='Your Email'
+                className='bg-transparent input '
+                required
+              />
+              <textarea
+                name='Message'
+                rows='6'
+                placeholder='Your Message'
+                className='bg-transparent input '
+              ></textarea>
+              <button type='submit' className='btn'>
+                Submit
+              </button>
+            </form>
           </div>
         </div>
+
         {sent && (
           <span className='text-green-600 w-[100%] flex align-center justify-center'>
             Message Sent
           </span>
         )}
       </div>
-      <div className='copyright overflow-x-hidden-hidden'>
+      <div className='copyright w-[100vw] overflow-x-hidden'>
         Copyright &copy; Gangadhar.
       </div>
     </>
