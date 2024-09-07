@@ -18,10 +18,283 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  .bg-gradient {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+  }
+  .image-hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", "sans-serif";
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #080808;
+  color: #fff;
+}
+ul {
+  text-decoration: none;
+}
+.head-icons {
+  display: none;
+}
+.cross {
+  display: none;
+}
+.menu {
+  display: none;
+}
+.li-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.li-underline::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: red;
+  position: absolute;
+  left: 0;
+  bottom: -4px; /* Adjust as needed to position the underline */
+  transition: width 0.5s ease; /* Smooth transition for the width */
+}
+
+.li-underline:hover::after {
+  width: 100%; /* Underline expands only on the hovered element */
+}
+
+button {
+  position: relative;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 40px;
+  font-size: large;
+}
+button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  width: 0;
+  height: 2px;
+  background-color: red;
+  transition: width 0.5s;
+}
+button.underline::after {
+  width: 100%;
+  background-color: red;
+}
+.btn {
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #ff004f;
+  border-radius: 5px;
+}
+.input {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 15px;
+  margin: 15px 0;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+}
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background: #262626;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+/* ------------------------ small screens ---------------------- */
+
+@media only screen and (max-width: 600px) {
+  html {
+    width: 100dvw;
+  }
+  .head-icons {
+    display: block;
+  }
+  .li-underline:hover::after {
+    width: 0;
+  }
+  .small-ul li {
+    padding: 20px;
+    font-size: 30px;
+  }
+  .menu {
+    display: block;
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    right: -180px;
+    font-size: 40px;
+  }
+  .cross {
+    display: block;
+    font-size: x-large;
+  }
+  .small-ul {
+    display: none;
+  }
+  .small-ul .cross {
+    font-size: 30px;
+  }
+
+  .small-introduce {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    margin-top: 50px;
+  }
+  .small-introduce .introduce {
+    margin-top: 50px;
+    margin-left: 50px;
+    width: max-content;
+  }
+  .small-introduce .my-img {
+    margin-top: 50px;
+    margin-left: 80px;
+    max-width: max-content;
+    height: 500px;
+    object-fit: cover;
+  }
+  .img {
+    max-width: none;
+    height: 500px;
+    object-fit: cover;
+  }
+  .small-aside {
+    margin-top: 0;
+  }
+  section {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+  .small-about-h1 {
+    margin-top: 10px;
+    margin-left: 40px;
+  }
+  .small-about-p {
+    margin-left: 40px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .samll-about-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+    overflow: hidden;
+  }
+  .small-content {
+    margin-left: 40px;
+    font-size: 20px;
+  }
+  .small-projects {
+    padding-top: 0;
+    margin-left: 40px;
+  }
+  .small-projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .small-project-div {
+    margin-bottom: 30px;
+    display: block;
+    background-color: #ededed;
+    position: relative;
+    width: 500px;
+    height: 500px;
+  }
+  .small-project-img {
+    display: none;
+  }
+  .small-project-p {
+    opacity: 1;
+    width: 500px;
+    height: 500px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .small-contact-container {
+    margin-right: -60px;
+  }
+  .small-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: none;
+  }
+  .small-contact-row1 {
+    display: flex;
+    flex-basis: 100%;
+    margin-bottom: 30px;
+    margin-left: -100px;
+  }
+  .first-p {
+    max-width: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .first-p span {
+    margin-left: 30px;
+  }
+  .small-contact-row1 .go-mail {
+    position: absolute;
+  }
+  form {
+    max-width: max-content;
+    width: 100vw;
+  }
+  form input {
+    width: 100%;
+  }
+  .small-contact-row2 {
+    display: flex;
+    flex-basis: 100%;
+    margin-right: -50px;
+  }
+  .copyright {
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-right: -210px;
+    width: -webkit-fill-available;
   }
 }

@@ -12,6 +12,11 @@ module.exports = {
         foreground: "var(--foreground)",
       },
     },
+    screens: {
+      mobile: { max: "600px" },
+      sm: "600px", // Customize this if needed
+      // other breakpoints...
+    },
   },
   plugins: [],
 };
