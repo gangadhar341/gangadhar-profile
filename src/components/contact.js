@@ -45,7 +45,7 @@ export default function Contact() {
                 <GoMail className='text-red-600 go-mail' /> &nbsp;
                 <span className='inline-block'>gangadharampolu@gmail.com</span>
               </p>
-              <p className='flex items-center text-2xl mb-4'>
+              <p className='flex items-center text-2xl mb-4 phoneNo'>
                 <FaPhone className='text-red-600' /> &nbsp; +91 9390707023
               </p>
               <div className='flex gap-6'>
