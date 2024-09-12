@@ -352,6 +352,12 @@ button.underline::after {
   .small-contact-row1 .go-mail {
     position: absolute;
   }
+  .cv-btn {
+    font-size: large;
+    padding: 10px 5px;
+    max-width: max-content;
+    width: auto;
+  }
   form {
     width: 100%;
   }
