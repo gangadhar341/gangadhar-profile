@@ -75,13 +75,9 @@ export default function Contact() {
                 </Link>
               </div>
             </div>
-            {/* <a
-                href='/public/Gangadhar.pdf'
-                download
-                className='border-r-2 border-red-600'
-              >
-                Download CV
-              </a> */}
+            <a href='/Gangadhar.pdf' download className='cv-btn'>
+              Download CV
+            </a>
           </div>
           <div className='flex ml-4 basis-[60%] w-[100%] justify-end small-contact-row2'>
             <form

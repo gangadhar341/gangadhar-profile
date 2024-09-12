@@ -110,6 +110,18 @@ button.underline::after {
   background-color: #ff004f;
   border-radius: 5px;
 }
+.cv-btn {
+  padding: 10px;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 35%;
+  cursor: pointer;
+  color: #fff;
+  background-color: #ff004f;
+  border-radius: 5px;
+  text-align: center;
+}
 .input {
   width: 100%;
   border: 0;
@@ -324,7 +336,6 @@ button.underline::after {
   }
   .small-contact-row1 h1 {
     font-size: 30px;
-    margin-left: 20px;
   }
   .first-p {
     max-width: 300px;
@@ -336,7 +347,7 @@ button.underline::after {
     font-size: large;
   }
   .first-p span {
-    margin-left: 30px;
+    margin-left: 20px;
   }
   .small-contact-row1 .go-mail {
     position: absolute;
